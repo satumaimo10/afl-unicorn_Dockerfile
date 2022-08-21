@@ -12,3 +12,4 @@ RUN make install
 WORKDIR /root/afl-unicorn/unicorn_mode/
 RUN sed -i -e "s/git clone \"\$UNICORN_URL\"/git clone \"\$UNICORN_URL\" -b 1.0.1/" build_unicorn_support.sh
 RUN ./build_unicorn_support.sh
+WORKDIR /root/afl-unicorn/
